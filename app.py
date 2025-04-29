@@ -12,7 +12,7 @@ app = Flask(__name__)
 app.secret_key = 'your-secret-key'  # replace this securely in production
 
 # === DATABASE CONFIG ===
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://1223707:BRAGyh12345@localhost/1223707'  # <-- UPDATE THIS
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql:https://aviator-predict.eu5.org/pma//1223707:BRAGyh12345@localhost/1223707'  # <-- UPDATE THIS
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)

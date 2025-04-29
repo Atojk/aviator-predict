@@ -2,7 +2,7 @@ flask
 gunicorn
 flask_sqlalchemy
 pymysql
-sklearn
+scikit-learn
 numpy
 flask_login
 flask_migrate

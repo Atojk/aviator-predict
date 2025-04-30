@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multiplier Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Multiplier Predictions</h1>
+
+    <div class="card">
+        <h3>System Status: <span id="status">⏳ Checking...</span></h3>
+        <p id="recordCount">Records: 0</p>
+    </div>
+
+    <button onclick="fetchPredictions()">Generate Predictions</button>
+
+    <table id="predictionTable">
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>Interval (min)</th>
+                <th>Min</th>
+                <th>Mid Avg</th>
+                <th>Max</th>
+                <th>Confidence</th>
+                <th>Feedback</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <div class="data-form">
+        <h2>Add Historical Data</h2>
+        <form onsubmit="addHistoricalData(event)">
+            <input type="text" name="date" placeholder="DD.MM.YYYY" pattern="\d{2}\.\d{2}\.\d{4}" title="Use DD.MM.YYYY format" required>
+            <input type="time" name="time" step="1" placeholder="HH:MM:SS" required>
+            <input type="number" step="0.01" name="multiplier" placeholder="Multiplier" required>
+            <button type="submit" class="generate-btn">Add Entry</button>
+        </form>
+    </div>
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+</body>
+</html>

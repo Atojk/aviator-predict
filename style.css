@@ -1,0 +1,76 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#predictionTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+#predictionTable th, #predictionTable td {
+    padding: 12px 15px;
+    text-align: center;
+}
+
+#predictionTable thead {
+    background-color: #007bff;
+    color: white;
+}
+
+#predictionTable tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.feedback-buttons button {
+    background-color: #28a745;
+    margin: 0 2px;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+.feedback-buttons button:nth-child(2) {
+    background-color: #dc3545;
+}
+
+.feedback-buttons button:hover {
+    opacity: 0.8;
+}
